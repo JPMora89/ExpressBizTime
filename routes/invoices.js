@@ -37,7 +37,8 @@ router.get('/', async (req, res, next) => {
     }
   })
 
-  router.patch('/:id', async (req, res, next) => {
+
+router.patch('/:id', async (req, res, next) => {
     try {
       const { id } = req.params;
       const { amt } = req.body;
@@ -50,6 +51,8 @@ router.get('/', async (req, res, next) => {
       return next(e)
     }
   })
+
+
 
   router.delete('/:id', async (req, res, next) => {
     try {
